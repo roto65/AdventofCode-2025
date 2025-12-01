@@ -1,4 +1,4 @@
-use std::fs;
+use std::{fs, time::Instant};
 
 pub fn read_input(num: u32, test: bool) -> Vec<String> {
     let content = if test {
@@ -8,4 +8,16 @@ pub fn read_input(num: u32, test: bool) -> Vec<String> {
     };
 
     return content.split("\n").into_iter().map(String::from).collect();
+}
+
+pub fn timer<F, R>(f: F) -> R
+where
+    F: FnOnce() -> R,
+{
+    let start = Instant::now();
+    let result = f();
+    let elapsed = start.elapsed();
+
+    println!("Execution time: {:?}", elapsed);
+    return result;
 }
