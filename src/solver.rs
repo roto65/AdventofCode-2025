@@ -1,5 +1,6 @@
 pub mod shared;
 
-pub mod day0;
-pub mod day1;
-pub mod day2;
+pub mod day00;
+pub mod day01;
+pub mod day02;
+pub mod day03;
