@@ -20,7 +20,7 @@ pub fn task_a() {
 
         file[i]
             .split_once('-')
-            .map(|(a, b)| (intervals.push((a.trim().parse().unwrap(), b.trim().parse().unwrap()))));
+            .map(|(a, b)| intervals.push((a.trim().parse().unwrap(), b.trim().parse().unwrap())));
     }
 
     for i in split..file.len() {
@@ -50,7 +50,7 @@ pub fn task_b() {
 
         file[i]
             .split_once('-')
-            .map(|(a, b)| (intervals.push((a.trim().parse().unwrap(), b.trim().parse().unwrap()))));
+            .map(|(a, b)| intervals.push((a.trim().parse().unwrap(), b.trim().parse().unwrap())));
     }
 
     intervals.sort();
