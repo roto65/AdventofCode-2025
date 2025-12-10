@@ -5,11 +5,11 @@ mod solver;
 fn main() { 
 
     shared::timer(|| {
-        solver::day09::task_a();
+        solver::day10::task_a();
     });
 
     shared::timer(|| {
-        solver::day09::task_b();
+        solver::day10::task_b();
     });
 
 }
